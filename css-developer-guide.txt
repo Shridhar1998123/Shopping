@@ -1,0 +1,243 @@
+1. CSS: Cascading Style sheet 
+        HTML has collection of pre-defined tags with limited property and values.
+        CSS has collection of only property and values.
+
+        =>Responsive webpage= HTML(tags) + CSS(property and values).
+        ----------------------------------------------------------------------------------------------------------- 
+        =>Types of CSS:
+            ->Inline CSS - 0%(usage in the market) 1-1(Write once & use one time)
+                Note=> In-line css will write inside the tag.
+
+                1. In In-line CSS we can write CSS code 1 time & can use only one time(with in the tag).
+                2.In In-line CSS There will be a Code duplicate.
+                3.If code is duplicate the file size will increase
+                4. If the file size is more browser wil take more time to load.
+                5. It takes more disk place.
+                6.If the page is loading slow the user experience may be bad.
+                7. Code modification will become complex due to duplicate code.
+                8. Search engine will reject from google search.
+        ---------------------------------------------------------------------------------------------------------------        
+            ->Internal CSS - 10%(usage in the market) 1-many(Write once & use many time), This is Unsecure:
+                Note=> Internal CSS written between head tag.
+
+                =>Syntax for Internal, external, Import CSS:
+                        selector{
+                            property1:value;
+                            property2:value;
+                            property3:value;
+                        }
+
+                =>Example:
+                        h1{
+                            text-align:center;
+                            color:red;
+                            font-size:30px;
+                        }        
+                    Note=>
+                        All the HTML Elemets(Tags) are selectors in CSS.
+-------------------------------------------------------------------------------------------------------------
+                    => The CSS has given following methods:
+
+                        1. CSS for tag name. -refer Example2.html
+
+                        Example:
+                         h2{
+                             color: red;
+                            font-size: 100px;
+                             text-align: center;
+                
+                          }
+ ------------------------------------------------------------------------------------------------------------                         
+                        2. CSS for tag group. - refer Example3.html
+
+                            Example:
+
+                                h3, p, div, label{
+                                     color: blue;
+                                    font-size: 50px;
+                                    font-style: italic;
+                
+                                 }
+---------------------------------------------------------------------------------------------------------------
+                        3. CSS for id.        - refer Example4.html
+                            => We can use Id only once in one webage.
+                            Example:
+                            #myblock1{
+                              font-size: 80px;
+                              color: red;
+                              background: skyblue;
+                              margin: 30px;
+                              text-align: center;
+                        }
+-----------------------------------------------------------------------------------------------------------
+                        4. CSS for Class.        - refer Example5.html 
+                            => We can use class multiple time in webpage to apply style for the similar class.
+
+                            Example:
+                                .myblock2{
+                                    width: 500px;
+                                    float: left;
+                                    font-size: 80px;
+                                    color: blue;
+                                    background: green;
+                                    margin: 40px;
+                             }
+ ------------------------------------------------------------------------------------------------------------                            
+                        5. CSS for child tag, any selector (id, class, tag, group of tag). - refer Example6.html
+
+                            Example:
+
+                                <style>
+                                    div p{
+                                        font-size: 40px;
+                                        color: blue;
+                                    }
+
+                                </style>
+
+                        =>Div:
+                            It is use to divide the page into multiple blocks with the use of CSS.
+
+                1. We can write internal CSS one time & we can use it many times.
+            ->External CSS - 85%(usage in the market) 1-many(Write once & use many time), This is unsecure but very fast
+            ->Import CSS - 5%(usage in the market)  1-many(Write once & use many time), Fully secure but super slow.
+
+
+*1. Inline CSS:
+        ->Syntax:
+            <tagname Style="property:value; property2:value2;"> content to print </tagname>
+
+            ->Example:
+                <p style=" color:red; height:200px; width:300px;"> Welcome to banglore </p>
+
+    => List of property and values in CSS:
+
+        1. height- There are 3 methods in CSS.
+            -> height: 200px; It is fixed all type of windows.
+            ->min-height: 200px; - It is fixed for minimum height, but if the content is more it will extend automatically.
+            -> height-auto; It is fully based on content, automatically it will adjust height as per content.
+ ---------------------------------------------------------------------------------------------------------------           
+        2. background- There are 9 methods in CSS:
+            ->background:red;
+            ->background-color:red;
+            ->background-color:rgb(100, 120, 50)
+            ->background-color:rgba(100, 120, 50, 0.5) a-(Opacity)-range of brightness- 0.1 to 1.
+            ->background-image:url('img.jpg');
+            ->background-image:linear-gradient( to left,skyblue, grey, blue, black);
+            ->background-image:linear-gradient( to right,skyblue, grey, blue, black);
+            ->background-image:linear-gradient( to top,skyblue, grey, blue, black);
+
+        3. width- There are 4 methods in CSS:
+            -> width:px; - It is fixed for all size of windows.
+            -> width:%; - It will fit in all size of window.
+            -> min-width: px/ %; -     
+            -> max-width: px/%;  -
+            
+        4. color- 
+        5. float- It is use to convert block level elements(tag) to inline elememts(tag). 
+                =>There are 2 methods:            
+                1. float: left -It prints the element from left to right.(LTR)
+                2. float: rigth -It prints the element from right to left.(RTL)
+
+    => Margin-
+            It applies the space outside of element.
+
+            => Methods of margin:
+            1. margin:auto;
+                        It align the element in center of present area from left to right.(horizontally) 
+            2. margin: 30px; 
+                        It applies 30px from all the side of thr screen.(top, left, right, bottom)          
+            3. margin-left;
+                        It applies margin only for left.
+            4. margin-right;
+                        It applies margin only for right of the screen.
+            5.margin-top;
+                        It applies margin only for top of the page.
+             6. margin-bottom;
+                        It applies margin only for bottom of the screen.
+
+
+                        => margin: top lef + right bottom       
+                            margin:20px 40px 20px    
+                                                 
+
+    => Padding:
+            It applies space inside elements(tag)
+            1. padding: 30px; it apply 30px gap from all the side
+            2 padding-left: 30px; it apply 30px gap from left side inside element.
+            3.padding-right: 30px; it apply 30px gap from right side inside element.
+            4. padding-top: 30px;  it apply 30px gap from top side inside element.
+            5. padding-bottom: 30px;  it apply 30px gap from bottom side inside element.
+            6. padding: top left+ right bottom
+
+    =>Note:
+            margin: It apply space outside of the element.
+            padding: It apply space inside the element.
+
+--------------------------------------------------------------------------------------------------------------\
+
+    => continueation of CSS Property & value.
+        => Display:
+            -> Below are the properties of display.
+                1. Display:none; - it hides the elements.
+                2. Display-block:   It converts from in-line to block.
+                3. Display-inline:  It converts block level tag to inline tag where width will not work.
+                4. Display-inline-block: It converts from block level tag to inline tag where width will work.
+                5. Display: grid;
+                6. Display: flex;
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+ Sample content:
+    
+        <section>
+            <p> software development </p>
+            <p> On-line marketing </p>
+            <p> Off-line marketing </p>
+            <p> Leads management </p>
+            <p> Home services </p>
+            <p> Painting services </p>
+            <p> Education </p>
+            <p> Employment </p>
+            <p> App development </p>
+            <p> website design </p>
+            <p> Buisness branding </p>
+            <p> Digital marketing </p>
+            <p> Hire & Deploy </p>
+        </section>
+
+        <div> software development </div>
+            <div> On-line marketing </div>
+            <div> Off-line marketing </div>
+            <div> Leads management </div>
+            <div> Home services </div>
+            <div> Painting services </div>
+            <div> Education </div>
+            <div> Employment </div>
+            <div> App development </div>
+            <div> website design </div>
+            <div> Buisness branding </div>
+            <div> Digital marketing </div>
+            <div> Hire & Deploy </div>
+------------------------------------------------------------------------------------------------------------        
+
+    Border radius:
+        example:
+            #b9{border: 10px solid red; border-radius: 30px;}
+            #b10{border: 10px solid red; border-radius: 0px 50px 10px 30px;}
+            #b11{border: 10px solid red;border-radius: 50%;}
+-----------------------------------------------------------------------------------------------------------
+
+    box-shadow: from-left  from top density  color
+
+        example: 
+            box-shadow:opx 0px 10px red;
+---------------------------------------------------------------------------------------------------------
+
+    Text-shadow: from-left  from top density  color
+
+        Example:
+            text-shadow: 0px 0px 10px red;
