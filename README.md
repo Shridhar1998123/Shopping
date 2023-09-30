@@ -1,1 +1,3 @@
 # Shopping
+
+Welcome to Git.
